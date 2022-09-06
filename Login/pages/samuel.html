@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Samuel Silvestre</title>
+    <link href="css/Style-samuel.css" rel="stylesheet">
+
+    <script language=javascript type="text/javascript">
+        dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+        monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro")
+        now = new Date
+       
+        function time(){
+        today=new Date();
+        h=today.getHours();
+        m=today.getMinutes();
+        s=today.getSeconds();
+        document.getElementById('boxFilho').innerHTML=h+":"+m+":"+s;
+        setTimeout('time()',500);
+    }   
+    </script>
+
+</head>
+
+
+
+<body onload="time()">
+    <h1 style="" > Pagina de Samuel Silvestre 2A. </h1>
+    <H2 style="margin-bottom: 15px;">Data atual:</H2>
+    <div id="box">
+        <script language=javascript type="text/javascript">
+            document.write ("<h2> Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </h1>")
+            </script>
+       
+
+    </div>
+    
+    <div id="box">
+        <h2>Codigo da data:</h2>
+        <div id="boxFilho2">
+           
+               <h3>No head:</h3> 
+                <P></P>
+                
+                <P> script language=javascript type="text/javascript" </p>
+                <p></p>
+                <P> dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")</P>
+                <p></p>
+                <p> monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro")</P>
+                <p></p>
+                <p>now = new Date </P>
+                <p></p>  
+                <p> function time(){ </P>
+                <p></p>
+                <p> today=new Date(); </P>
+                <p></p>
+                <p> h=today.getHours(); </P>
+                <p></p>
+                <p> m=today.getMinutes(); </P>
+                <p></p>
+                <p> s=today.getSeconds(); </P>
+                <p></p>
+                <p> document.getElementById('boxFilho').innerHTML=h+":"+m+":"+s;</P>
+                <p></p>
+                <p> setTimeout('time()',500); </P>
+                <p></p>
+                <p> } </p> 
+                <p></p>
+                <p> </script></P>
+                <p></p>
+
+           
+
+        </div>
+
+    </div>
+
+
+
+    <div id="box">
+
+        <h2>Horario de brasília em tempo real:</h2>
+
+        <div id="boxFilho" style="margin: 15px; font-size: 50px;">
+
+        </div>  
+    </div>
+
+
+</body>
+</html>
