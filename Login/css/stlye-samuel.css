@@ -1,3 +1,25 @@
 body {
-    background-color: lightskyblue;
+    background-color: #120a8f;
+
+}
+
+h1,h2,p {
+    margin: 0;
+}
+
+#box {
+    background-color: #ddddddde;
+    width: 700px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+#boxFilho, #boxFilho2{
+    background-color: #c4c4c4de;
+    width: 500px;
+    margin-bottom: 20px;
+    padding: 20px;
+ 
+    
+
+
 }
